@@ -25,12 +25,10 @@
             Console.WriteLine("Выбор операции '+' '-' '*' '/'");
             action = Console.ReadLine();
 
-            if (action == "+")
+            if (action == "-")
             {
-                Console.WriteLine(firstValue + secondValue);
+                Console.WriteLine(firstValue - secondValue);
             }
-
-
             else
             {
                 Console.WriteLine("Ошибка");
