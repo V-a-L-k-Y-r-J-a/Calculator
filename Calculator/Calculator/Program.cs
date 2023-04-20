@@ -38,24 +38,23 @@ class Program
             {
                 Console.WriteLine(firstValue * secondValue);
             }
-            switch (action)
+            else if (action == "/")
             {
-                case "/":
-                    if (secondValue == 0)
-                    {
+                if (secondValue == 0)
+                {
 
-                        Console.WriteLine(0);
-                    }
-                    else
-                    {
-                        Console.WriteLine(firstValue / secondValue);
-                    }
-                    break;
-                default:
-                    Console.WriteLine("Ошибка");
-                    break;
+                    Console.WriteLine(0);
+                }
+                else
+                {
+                    Console.WriteLine(firstValue / secondValue);
+                }
+
             }
-  
+            else
+            {
+                Console.WriteLine("Ошибка");
+            }
             Console.ReadLine();
         }
 
