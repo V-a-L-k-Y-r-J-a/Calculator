@@ -1,4 +1,4 @@
-﻿class Program
+class Program
 {
     static void Main(string[] args)
     {
@@ -22,26 +22,40 @@
                 Console.ReadLine();
                 continue;
             }
+
             Console.WriteLine("Выбор операции '+' '-' '*' '/'");
             action = Console.ReadLine();
 
-            if (action == "/")
+            if (action == "+")
             {
-                if (secondValue == 0)
-                {
-
-                    Console.WriteLine(0);
-                }
-                else
-                {
-                    Console.WriteLine(firstValue / secondValue);
-                }
-
+                Console.WriteLine(firstValue + secondValue);
             }
-            else
+            else if (action == "-")
             {
-                Console.WriteLine("Ошибка");
+                Console.WriteLine(firstValue - secondValue);
             }
+            else if (action == "*")
+            {
+                Console.WriteLine(firstValue * secondValue);
+            }
+            switch (action)
+            {
+                case "/":
+                    if (secondValue == 0)
+                    {
+
+                        Console.WriteLine(0);
+                    }
+                    else
+                    {
+                        Console.WriteLine(firstValue / secondValue);
+                    }
+                    break;
+                default:
+                    Console.WriteLine("Ошибка");
+                    break;
+            }
+  
             Console.ReadLine();
         }
 
