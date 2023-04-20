@@ -22,10 +22,23 @@
                 Console.ReadLine();
                 continue;
             }
+
             Console.WriteLine("Выбор операции '+' '-' '*' '/'");
             action = Console.ReadLine();
 
-            if (action == "/")
+            if (action == "+")
+            {
+                Console.WriteLine(firstValue + secondValue);
+            }
+            else if (action == "-")
+            {
+                Console.WriteLine(firstValue - secondValue);
+            }
+            else if (action == "*")
+            {
+                Console.WriteLine(firstValue * secondValue);
+            }
+            else if (action == "/")
             {
                 if (secondValue == 0)
                 {
