@@ -1,4 +1,4 @@
-﻿class Program
+class Program
 {
     static void Main(string[] args)
     {
@@ -38,23 +38,24 @@
             {
                 Console.WriteLine(firstValue * secondValue);
             }
-            else if (action == "/")
+            switch (action)
             {
-                if (secondValue == 0)
-                {
+                case "/":
+                    if (secondValue == 0)
+                    {
 
-                    Console.WriteLine(0);
-                }
-                else
-                {
-                    Console.WriteLine(firstValue / secondValue);
-                }
-
+                        Console.WriteLine(0);
+                    }
+                    else
+                    {
+                        Console.WriteLine(firstValue / secondValue);
+                    }
+                    break;
+                default:
+                    Console.WriteLine("Ошибка");
+                    break;
             }
-            else
-            {
-                Console.WriteLine("Ошибка");
-            }
+  
             Console.ReadLine();
         }
 
