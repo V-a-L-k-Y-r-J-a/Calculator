@@ -25,9 +25,18 @@
             Console.WriteLine("Выбор операции '+' '-' '*' '/'");
             action = Console.ReadLine();
 
-            if (action == "*")
+            if (action == "/")
             {
-                Console.WriteLine(firstValue * secondValue);
+                if (secondValue == 0)
+                {
+
+                    Console.WriteLine(0);
+                }
+                else
+                {
+                    Console.WriteLine(firstValue / secondValue);
+                }
+
             }
             else
             {
